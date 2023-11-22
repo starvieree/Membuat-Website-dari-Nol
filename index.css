@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+* {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    border: none;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    outline: none;
+}
+
+/* bagian text */
+.h4 {
+    font-size: 1.3rem;
+    line-height: 1rem;
+}
+
+h1 {
+    font-size: 2.4rem;
+    line-height: 4rem;
+}
+
+.text {
+    color: var(--style--);
+    position: absolute;
+}
+
+.span {
+    color: var(--style--);
+}
+
+p {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+    margin-bottom: 1.8rem;
+}
+
+.h2 {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+}
+
+/* bagian warna */
+:root{
+    --utama--: #1f242d;
+    --sekunder--: #323946;
+    --font--: rgb(255, 255, 255);
+    --style--: #0ef;
+}
+
+/* bagian section */
+#one {
+    padding: 7rem;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--utama--);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--font--);
+}
+
+#two {
+    padding: 7rem;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--sekunder--);
+    display: flex;
+    align-items: center;
+    color: var(--font--);
+}
+
+#three {
+    padding: 7rem;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--utama--);
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center;
+    color: var(--font--);
+}
+
+#four {
+    padding: 7rem;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--sekunder--);
+    align-items: center;
+    color: var(--font--);
+}
+
+#five {
+    padding: 7rem;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--utama--);
+    /*display: flex;*/
+    color: var(--font--);
+}
+
+/* bagian navbar */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 7rem;
+    background-color: var(--utama--);
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+}
+
+header .project {
+    margin: 0.8rem;
+    color: var(--font--);
+    font-size: 0.75rem;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav a {
+    color: var(--font--);
+    font-size: 0.7rem;
+    margin: 0 1.5rem;
+    transition: 0.45s ease;
+}
+
+nav a:hover {
+    color: var(--style--);
+}
+
+/* section pertama */
+.kiri-one {
+    width: 75%;
+}
+
+.kanan-one {
+    z-index: 1;
+}
+
+.kanan-one img {
+    float: right;
+    width: 95%;
+}
+
+.text:before {
+    content: "";
+    background-color: var(--utama--);
+    border-left: solid 3px #0ef;
+    position: absolute;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    animation: animate 4s steps(25) infinite;
+}
+
+@keyframes animate {
+    0%{
+        left: 0%;
+    }
+    40%, 60%{
+        left: 100%;
+    }
+    100%{
+        left: 0%;
+    }
+}
+
+.logo {
+    display: flex;
+    gap: 0.7rem;
+}
+
+.logo-medsos a img {
+    width: 30px;
+    padding: 5px;
+    border: solid 1px #0ef;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+a img:hover {
+    box-shadow: 0 0 3px 2.5px rgba(0, 238, 255, 0.3);
+    scale: 1.025;
+}
+
+.kiri-one a button {
+    margin: 1.5rem 0;
+    padding: 0.6rem 1rem;
+    background-color: var(--style--);
+    color: var(--utama--);
+    box-shadow: 0 0 5px 3px rgba(0, 238, 255, 0.3);
+    border: solid 1px #0ef;
+    border-radius: 1.5rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.kiri-one a button:hover {
+    box-shadow: none;
+}
+
+/* section kedua */
+.kiri-two img {
+    width: 85%;
+}
+
+.kanan-two {
+    width: 75%;
+}
+
+.kanan-two a button {
+    padding: 0.6rem 1rem;
+    background-color: var(--style--);
+    color: var(--utama--);
+    box-shadow: 0 0 5px 3px rgba(0, 238, 255, 0.3);
+    border: solid 1px #0ef;
+    border-radius: 1.5rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.kanan-two a button:hover {
+    box-shadow: none;
+}
+
+/* section ketiga */
+.atas-three {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.atas-three h2 {
+    text-align: center;
+    line-height: 2rem;
+}
+
+.bawah-three {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+    width: 100%;
+    height: 90%;
+}
+
+.box h4 {
+    margin-top: 1rem;
+}
+
+.box {
+    background-color: var(--sekunder--);
+    border-radius: 1rem;
+    padding: 3rem 2rem;
+    width: 32%;
+    height: 100%;
+    text-align: center;
+    transition: 0.15s;
+}
+
+.box:hover {
+    scale: 1.02;
+    border: solid 2px #0ef;
+}
+
+.bawah-three a button {
+    padding: 0.6rem 1rem;
+    background-color: var(--style--);
+    color: var(--utama--);
+    box-shadow: 0 0 5px 3px rgba(0, 238, 255, 0.3);
+    border: solid 1px #0ef;
+    border-radius: 1.5rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.bawah-three a button:hover {
+    box-shadow: none;
+}
+
+/* section keempat */
+#four h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+#four .hasil {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#four img {
+    width: 32%;
+    height: 12.5rem;
+    border-radius: 0.75rem;
+    margin: 10px 0;
+    transition: 0.3s;
+}
+
+/* section kelima */
+#five h2 {
+   text-align: center;
+    line-height: 2rem;
+    margin-bottom: 2rem
+}
+
+.atas, .tengah {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.placeholder::placeholder {
+    color: gray;
+    text-align: top;
+    font-size: 12px;
+}
+
+.atas input, .tengah input {
+    width: 20rem;
+    height: 2rem;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+    padding-left: 0.8rem;
+    background-color: var(--sekunder--);
+    color: var(--font--);
+    font-size: 12.5px;
+}
+
+.bawah {
+    display: flex;
+    justify-content: center;
+}
+
+.bawah textarea {
+    width: 40.5rem;
+    height: 15rem;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+    padding-left: 0.8rem;
+    background-color: var(--sekunder--);
+    color: var(--font--);
+    font-size: 12.5px;
+    padding: 0.6rem 0.8rem;
+    line-height: 1.05rem;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+}
+
+.submit a button {
+    margin-top: 0.75rem;
+    padding: 0.6rem 1rem;
+    background-color: var(--style--);
+    color: var(--utama--);     
+    box-shadow: 0 0 5px 3px rgba(0, 238, 255, 0.3);
+    border: solid 1px #0ef;
+    border-radius: 1.5rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.submit a button:hover {
+    box-shadow: none;
+}
+
+/* bagian footer */
+footer {
+    padding: 0 7rem;
+    width: 100%;
+    height: 3rem;
+    background-color: var(--sekunder--);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--font--);
+}
+
+.copy p {
+    margin-top: 1.75rem;
+}
+
+footer .kembali img {
+    width: 1.25rem;
+}
+
+footer .kembali img:hover {
+    box-shadow: none;
+    border-bottom: solid 2px #0ef;
+}
